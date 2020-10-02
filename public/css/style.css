@@ -1,5 +1,6 @@
 /* style.css - Joshua Eagles - 301078033 - 2020-10-02 */
 
 body {
-  /* font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; */
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
