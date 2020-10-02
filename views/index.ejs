@@ -2,10 +2,10 @@
 <%- include('./partials/nav.ejs') %>
 
 <div class="container-md jumbotron">
-	<h1 style="text-align:center;"><%= title %></h1>
+	<h1 class="text-center"><%= title %></h1>
+	<hr>
 
-	<!-- Add some space then insert the content for the correct page -->
-	<br><br>
+	<br>
 	<%- include('./partials/' + partialName + '.ejs') %>
 </div>
 
