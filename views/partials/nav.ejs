@@ -6,8 +6,21 @@
 
 	<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+			<!-- Inside the class for these is a little ternary if to make them active when that page is open -->
+			<li class="nav-item <%= (title == "Home") ? "active" : "" %>">
+				<a class="nav-link" href="/home">Home</a>
+			</li>
+			<li class="nav-item <%= (title == "About Me") ? "active" : "" %>">
+				<a class="nav-link" href="/about">About Me</a>
+			</li>
+			<li class="nav-item <%= (title == "Projects") ? "active" : "" %>">
+				<a class="nav-link" href="/projects">Projects</a>
+			</li>
+			<li class="nav-item <%= (title == "Services") ? "active" : "" %>">
+				<a class="nav-link" href="/services">Services</a>
+			</li>
+			<li class="nav-item <%= (title == "Contact Me") ? "active" : "" %>">
+				<a class="nav-link" href="/contact">Contact Me</a>
 			</li>
 		</ul>
 	</div>

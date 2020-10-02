@@ -1,9 +1,9 @@
 <%- include('./partials/header.ejs') %>
 <%- include('./partials/nav.ejs') %>
-<div>
-	<div class="container-md jumbotron">
-		<h1><%= title %></h1>
-		<p>Welcome to the <%= title %> page.</p>
-	</div>
+
+<div class="container-md jumbotron">
+	<h1><%= title %></h1>
+	<%- include('./partials/' + partialName + '.ejs') %>
 </div>
+
 <%- include('./partials/footer.ejs') %>
